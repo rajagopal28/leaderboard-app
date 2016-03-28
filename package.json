@@ -1,0 +1,19 @@
+{
+  "name": "leaderboard-app",
+  "version": "1.0.0",
+  "description": "An application to gamify the user's post-purchase status via leadership boards and promotions",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DextrousInc/leaderboard-app.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DextrousInc/leaderboard-app/issues"
+  },
+  "homepage": "https://github.com/DextrousInc/leaderboard-app#readme"
+}
