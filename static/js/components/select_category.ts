@@ -10,7 +10,7 @@ import {SubCategory} from './select_sub_category';
     }`
     ],
     directives : [SubCategory],
-    templateUrl: '../../../templates/select-category.html'
+    templateUrl: 'templates/select-category.html'
 })
 export class Category {
     @Input() categories:string[];

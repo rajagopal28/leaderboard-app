@@ -7,7 +7,7 @@ import {User} from "./../models/user";
 
 @Component({
     selector: 'selection-bar',
-    templateUrl: '../../../templates/select-bar.html',
+    templateUrl: 'templates/select-bar.html',
     styles: ['a { cursor: pointer; cursor: hand; }'],
     directives: [Category, SubCategory],
     providers: [UserService, ProductService]
