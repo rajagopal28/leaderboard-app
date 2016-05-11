@@ -32,18 +32,20 @@
             transpiler: 'typescript',
             typescriptOptions: {emitDecoratorMetadata: true},
             packages: {
-                app :
-                    {
-                        format : 'system',
-                        defaultExtension: 'ts'
-                    }
+                'leadership-app': {
+                    format: 'system',
+                    defaultExtension: 'ts'
+                }
+            },
+            map: {
+                'leadership-app': 'static/js'
             }
         });
-        System.import('/static/js/main.ts')
+        System.import('static/js/main')
                 .then(null, console.error.bind(console));
     </script>
 </head>
 <body>
-     <selection-bar></selection-bar>
+<selection-bar></selection-bar>
 </body>
 </html>
