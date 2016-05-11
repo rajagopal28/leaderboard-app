@@ -1,5 +1,5 @@
 import {Component, Input, Output, EventEmitter} from 'angular2/core'
-import {SubCategory} from './select_sub_category.ts';
+import {SubCategory} from './select_sub_category';
 
 @Component({
     selector: 'select-category',
@@ -10,7 +10,7 @@ import {SubCategory} from './select_sub_category.ts';
     }`
     ],
     directives : [SubCategory],
-    templateUrl: '../../../templates/select-category.html'
+    templateUrl: 'templates/select-category.html'
 })
 export class Category {
     @Input() categories:string[];

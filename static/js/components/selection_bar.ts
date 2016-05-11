@@ -1,13 +1,13 @@
 import {Component} from 'angular2/core';
-import {Category} from './select_category.ts';
-import {SubCategory} from "./select_sub_category.ts";
-import {UserService} from "./../services/user_service.ts";
-import {ProductService} from "./../services/product_service.ts";
-import {User} from "./../models/user.ts";
+import {Category} from './select_category';
+import {SubCategory} from "./select_sub_category";
+import {UserService} from "./../services/user_service";
+import {ProductService} from "./../services/product_service";
+import {User} from "./../models/user";
 
 @Component({
     selector: 'selection-bar',
-    templateUrl: '../../../templates/select-bar.html',
+    templateUrl: 'templates/select-bar.html',
     styles: ['a { cursor: pointer; cursor: hand; }'],
     directives: [Category, SubCategory],
     providers: [UserService, ProductService]
@@ -48,10 +48,3 @@ export class SelectionBar {
     }
 
 }
-
-
-/*
- Copyright 2016 Google Inc. All Rights Reserved.
- Use of this source code is governed by an MIT-style license that
- can be found in the LICENSE file at http://angular.io/license
- */

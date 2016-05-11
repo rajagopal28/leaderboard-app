@@ -8,7 +8,7 @@ import {Component, Input, Output, EventEmitter} from 'angular2/core'
       color: grey;
     }`
     ],
-    templateUrl: '../../../templates/select-sub-category.html'
+    templateUrl: 'templates/select-sub-category.html'
 })
 export class SubCategory {
     @Input() subCategories : string[];

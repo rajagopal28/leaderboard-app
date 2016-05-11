@@ -13,37 +13,28 @@
     <!--        Static Vendor Javascripts -->
     <script src="./vendors/js/libraries/jquery-2.1.4.min.js"></script>
     <script src="./vendors/js/libraries/es6-shim-0.35.0.min.js"></script>
-    <script src="./vendors/js/libraries/system-polyfills-0.19.20.js"></script>
+    <script src="./vendors/js/libraries/es6-promise.min.js"></script>
     <script src="./vendors/js/libraries/shims_for_IE.js"></script>
-
-
+    <script src="./vendors/js/libraries/system-polyfills-0.19.20.js"></script>
     <script src="./vendors/js/modules/angular2-polyfills.js"></script>
-    <script src="./vendors/js/modules/system-0.19.6.min.js"></script>
-    <script src="./vendors/js/modules/typescript-1.8.9.js"></script>
-    <script src="./vendors/js/modules/Rx-2.0.0-beta.13.js"></script>
+
+    <script src="vendors/js/libraries/system-0.19.6.min.js"></script>
+    <script src="vendors/js/libraries/typescript-1.8.9.js"></script>
+    <script src="vendors/js/libraries/Rx-2.0.0-beta.13.js"></script>
+
     <script src="./vendors/js/modules/angular2.dev.js"></script>
     <script src="./vendors/js/modules/router.dev.js"></script>
     <script src="./vendors/js/modules/http.dev.js"></script>
 
-    <script src="./vendors/js/bootstrap-3.3.5.min.js"></script>
     <!--        Static Vendor module Javascripts -->
+    <script src="static/js/config/system.config.js"></script>
     <script>
-        System.config({
-            transpiler: 'typescript',
-            typescriptOptions: {emitDecoratorMetadata: true},
-            packages: {
-                app :
-                    {
-                        format : 'system',
-                        defaultExtension: 'ts'
-                    }
-            }
+        System.import('app').catch(function (err) {
+            console.error(err);
         });
-        System.import('/static/js/main.ts')
-                .then(null, console.error.bind(console));
     </script>
 </head>
 <body>
-     <selection-bar></selection-bar>
+<selection-bar>Loading....</selection-bar>
 </body>
 </html>
