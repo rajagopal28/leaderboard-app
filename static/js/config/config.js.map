@@ -1,0 +1,1 @@
+{"version":3,"file":"config.js","sourceRoot":"","sources":["config.ts"],"names":["AppConfig","AppConfig.constructor","AppConfig.API_ENDPOINT"],"mappings":"AAAA;IAAAA;IAEAC,CAACA;IADGD,sBAAkBA,yBAAYA;aAA9BA,cAA2CE,MAAMA,CAACA,4BAA4BA,CAACA,CAACA,CAACA;;;OAAAF;IACrFA,gBAACA;AAADA,CAACA,AAFD,IAEC;AAFY,iBAAS,YAErB,CAAA"}

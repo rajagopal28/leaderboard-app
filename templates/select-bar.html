@@ -1,0 +1,6 @@
+<h2>Hey You selected : {{selectedCategory}} and {{selectedValue}}</h2>
+<select-category [categories]="categoryList" (selectedCategory)="selectType($event)"></select-category>
+<select-subcat [subCategories]="subCategoryList" (selectedValue)="selectValue($event)"></select-subcat>
+<ul>
+    <li *ngFor="#user of users">{{user.user.email}}</li>
+</ul>
