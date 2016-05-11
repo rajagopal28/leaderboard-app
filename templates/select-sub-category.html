@@ -1,0 +1,7 @@
+<select [(ngModel)]="selectedItem" class="list-unstyled">
+    <option value="">select</option>
+    <option *ngFor="#subCategory of subCategories" value="{{subCategory}}">
+        {{subCategory}}
+    </option>
+</select>
+<input class="btn-primary" type="submit" (click)="selectionChanged()" value="apply">
