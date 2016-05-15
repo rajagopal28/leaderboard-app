@@ -1,0 +1,13 @@
+<div class="dropdown">
+    <button class="btn btn-default dropdown-toggle" id="users-filter" type="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+        <span *ngIf="selectedItemLabel !== ''">{{ selectedItemLabel }}</span>
+        <span *ngIf="selectedItemLabel === ''">Select</span>
+        <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu" aria-labelledby="users-filter">
+        <li *ngFor="let user of users">
+            <a (click)="selectionChanged(user)">{{ user.firstName }}&nbsp;{{ user.lastName }}</a>
+        </li>
+    </ul>
+</div>

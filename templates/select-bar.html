@@ -1,6 +1,22 @@
-<h2>Hey You selected : {{selectedCategory}} and {{selectedValue}}</h2>
-<select-category [categories]="categoryList" (selectedCategory)="selectType($event)"></select-category>
-<select-subcat [subCategories]="subCategoryList" (selectedValue)="selectValue($event)"></select-subcat>
-<ul>
-    <li *ngFor="#user of users">{{user.user.email}}</li>
-</ul>
+<h2>Hey You selected : {{ selectedCategory }} and {{ selectedValue }}</h2>
+<div class="row">
+    <div class="col-md-4">
+        <select-category [categories]="categoryList" (selectedCategory)="selectType($event)"></select-category>
+    </div>
+    <div class="col-md-4">
+        <select-subcat [subCategories]="subCategoryList" (selectedValue)="selectValue($event)"></select-subcat>
+    </div>
+</div>
+<leader-board [boardItems]="boardItems"></leader-board>
+<div class="row">
+    <div class="col-md-6">
+        <pie-chart [data]="categoryChartData" title="Selected Category visualization" height="520" width="520">
+            Graphing....
+        </pie-chart>
+    </div>
+    <div class="col-md-6">
+        <pie-chart [data]="subCategoryChartData" title="Selected SubCategory visualization" height="520" width="520">
+            Graphing....
+        </pie-chart>
+    </div>
+</div>

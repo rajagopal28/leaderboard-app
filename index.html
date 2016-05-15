@@ -6,35 +6,38 @@
     <title>Leadership App</title>
     <!--        Static vendor CSS files      -->
     <link rel="stylesheet" type="text/css" href="./vendors/css/bootstrap-3.3.5.min.css">
+    <link rel="stylesheet" type="text/css" href="./vendors/css/bootstrap-theme-3.3.5.min.css">
     <link rel="stylesheet" type="text/css" href="./vendors/css/font-awesome-4.0.3.min.css">
     <!--        Static CSS files        -->
     <link data-turbolinks-track="true" href="./static/css/main.css" media="all" rel="stylesheet">
+    <script>document.write('<base href="' + document.location + '" />');</script>
 
-    <!--        Static Vendor Javascripts -->
     <script src="./vendors/js/libraries/jquery-2.1.4.min.js"></script>
+    <script src="./vendors/js/libraries/d3.3.5.6.min.js"></script>
+    <!--        Static Vendor Javascripts -->
     <script src="./vendors/js/libraries/es6-shim-0.35.0.min.js"></script>
     <script src="./vendors/js/libraries/es6-promise.min.js"></script>
-    <script src="./vendors/js/libraries/shims_for_IE.js"></script>
+
+    <script src="./vendors/js/libraries/zone.0.6.12.js"></script>
+    <script src="./vendors/js/libraries/reflect-metadata.0.1.3.js"></script>
+
     <script src="./vendors/js/libraries/system-polyfills-0.19.20.js"></script>
     <script src="./vendors/js/modules/angular2-polyfills.js"></script>
 
-    <script src="vendors/js/libraries/system-0.19.6.min.js"></script>
-    <script src="vendors/js/libraries/typescript-1.8.9.js"></script>
-    <script src="vendors/js/libraries/Rx-2.0.0-beta.13.js"></script>
+    <script src="./vendors/js/libraries/system-0.19.27.js"></script>
+    <script src="./vendors/js/libraries/typescript-1.8.9.js"></script>
 
-    <script src="./vendors/js/modules/angular2.dev.js"></script>
-    <script src="./vendors/js/modules/router.dev.js"></script>
-    <script src="./vendors/js/modules/http.dev.js"></script>
+    <script src="./vendors/js/bootstrap-3.3.5.min.js"></script>
 
-    <!--        Static Vendor module Javascripts -->
     <script src="static/js/config/system.config.js"></script>
     <script>
         System.import('app').catch(function (err) {
             console.error(err);
         });
     </script>
+    <!--        Static Vendor module Javascripts -->
 </head>
 <body>
-<selection-bar>Loading....</selection-bar>
+<leadership-app>Loading....</leadership-app>
 </body>
 </html>

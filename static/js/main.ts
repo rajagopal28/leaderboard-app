@@ -1,5 +1,6 @@
-import {bootstrap} from 'angular2/platform/browser';
-import {HTTP_BINDINGS} from 'angular2/http';
-import {SelectionBar}   from './components/selection_bar';
-console.log('loading bootstrap');
-bootstrap(SelectionBar, [HTTP_BINDINGS]);
+import {bootstrap} from '@angular/platform-browser-dynamic';
+import {HTTP_BINDINGS} from '@angular/http';
+import {ROUTER_PROVIDERS} from '@angular/router-deprecated';
+
+import {AppComponent}   from './components/app.component';
+bootstrap(AppComponent, [ROUTER_PROVIDERS, HTTP_BINDINGS]);

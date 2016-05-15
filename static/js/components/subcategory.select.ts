@@ -1,4 +1,4 @@
-import {Component, Input, Output, EventEmitter} from 'angular2/core'
+import {Component, Input, Output, EventEmitter} from '@angular/core'
 
 @Component({
     selector: 'select-subcat',
@@ -15,9 +15,8 @@ export class SubCategory {
     @Output() selectedValue = new EventEmitter<string>();
     selectedItem:string = '';
 
-    selectionChanged():void {
-        //let sel = event.target;
-        // let chosen = sel.options[sel.selectedIndex].value;
+    selectionChanged(selection):void {
+        this.selectedItem = selection;
         console.log(this.selectedItem);
         this.selectedValue.next(this.selectedItem);
     }

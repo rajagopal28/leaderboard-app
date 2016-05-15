@@ -1,0 +1,25 @@
+<div class="panel panel-default">
+    <div class="panel-heading">Classified leadership board</div>
+
+    <table *ngIf="boardItems.length > 0" class="table table-striped">
+        <thead>
+        <tr>
+            <th>User</th>
+            <th>Level</th>
+            <th>Segment Type</th>
+            <th>Segment Value</th>
+            <th>Level Value</th>
+        </tr>
+        </thead>
+        <tr *ngFor="let item of boardItems">
+            <td>{{ item.user.firstName }} &nbsp; {{ item.user.lastName }}</td>
+            <td>{{ item.levelName }}</td>
+            <td>{{ item.boardSegmentType }}</td>
+            <td>{{ item.boardSegmentValue }}</td>
+            <td>{{ item.levelValue }}</td>
+        </tr>
+    </table>
+    <div class="alert alert-info" *ngIf="boardItems.length == 0" >
+        Please choose an option
+    </div>
+</div>

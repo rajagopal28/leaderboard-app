@@ -142,8 +142,66 @@ nav a.router-link-active {
 }
 
 
-/*
-Copyright 2016 Google Inc. All Rights Reserved.
-Use of this source code is governed by an MIT-style license that
-can be found in the LICENSE file at http://angular.io/license
-*/
+.footer {
+    background-color: #fff;
+    height: 200px;
+    text-align: right;
+    width: 100%
+}
+
+.footer .social_media {
+    margin: 65px 0 20px;
+    width: 100%
+}
+
+.social_media li {
+    display: inline-block;
+    height: 24px;
+    margin: 0 0 0 10px;
+    text-align: left;
+    text-indent: -9999px;
+    width: 24px
+}
+
+.social_media li a {
+    display: block;
+    height: 24px;
+    width: 24px
+}
+
+.github {
+    background: url(static/images/github.svg) center center;
+}
+
+.linkedin {
+    background: url(static/images/linkedin.svg) center center;
+}
+
+.twitter {
+    background: url(static/images/twitter.svg) center center;
+}
+
+.instagram {
+    background: url(static/images/instagram.svg) center center;
+}
+
+.facebook {
+    background: url(static/images/facebook.svg) center center;
+}
+
+
+.gplus {
+    background: url(static/images/gplus.svg) center center;
+}
+
+.main .container {
+    margin: 80px 0
+}
+
+.chart-container {
+  padding: 1em 4em;
+}
+
+.chart-container svg {
+    padding: 1em 2em;
+}

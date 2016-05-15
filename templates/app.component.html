@@ -1,0 +1,40 @@
+<div class="header">
+    <div class="navbar navbar-primary">
+        <div class="container-fluid">
+            <div class="navbar-header navbar-nav-padding">
+                <a class="navbar-brand" href="#">DexterousInc</a>
+            </div>
+            <div>
+                <ul class="nav navbar-nav navbar-nav-padding">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li>
+                        <a [routerLink]="['Users']">Users</a>
+                    </li>
+                    <li>
+                        <a [routerLink]="['Orders']">Orders</a>
+                    </li>
+                    <li>
+                        <a [routerLink]="['LeaderBoard']">Leadership Board<i class="glyphicon glyphicon-road"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<router-outlet></router-outlet>
+<div class="footer">
+    <div class="container">
+        <ul class="social_media">
+            <li>
+                <a class="github" href="https://github.com/rajagopal28">github</a>
+            </li>
+            <li>
+                <a class="linkedin" href="https://in.linkedin.com/in/rajagopal28">linkedin</a>
+            </li>
+            <li>
+                <a class="twitter" href="https://twitter.com/M_Rajagopal">twitter</a>
+            </li>
+        </ul>
+        <p>© 2015 Rajagopal M</p>
+    </div>
+</div>

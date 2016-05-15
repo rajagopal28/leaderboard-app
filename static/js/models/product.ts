@@ -1,5 +1,4 @@
-export interface User {
-  id: number,
+export interface Product {
   firstName: string,
   lastName: string,
   username: string,
