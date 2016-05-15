@@ -21,11 +21,18 @@ export class Orders {
     selectedUser:number;
     orderList:Order[] = [];
     userOrdersGraphData: ChartItem[];
+    categoryOrdersGraphData: ChartItem[];
 
     constructor(private orderService:OrderService) {
         this.orderService.fetchAggregatedOrdersByUser()
             .subscribe(
                 orders => this.userOrdersGraphData = orders,
+                error => console.error('Error: ' + JSON.stringify(error)),
+                () => console.log('Completed!')
+            );
+        this.orderService.fetchAggregatedOrdersByCategory()
+            .subscribe(
+                orders => this.categoryOrdersGraphData = orders,
                 error => console.error('Error: ' + JSON.stringify(error)),
                 () => console.log('Completed!')
             );

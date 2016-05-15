@@ -45,8 +45,8 @@ export class PieChart implements OnInit {
         //console.log('rendering');
         var graph:any = d3.select(el);
         let r = (this.height / 2) - 50;
-        let svgWidth = parseInt(self.width) - 20;
-        let svgHeight = parseInt(self.height) - 20;
+        let svgWidth = parseInt(self.width) - 40;
+        let svgHeight = parseInt(self.height) - 40;
         this.divs = graph
             .append("svg:svg")
             .data([self.data])

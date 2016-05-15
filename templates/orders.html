@@ -2,8 +2,13 @@
 <user-select (selectedUser)="selectUser($event)"></user-select>
 <order-list [orders]="orderList"></order-list>
 <div class="row">
-    <div class="col-md-8">
-        <pie-chart [data]="userOrdersGraphData" title="Order visualization" height="520" width="520">
+    <div class="col-md-6">
+        <pie-chart [data]="userOrdersGraphData" title="Orders Vs Users visualization" height="520" width="520">
+            Graphing....
+        </pie-chart>
+    </div>
+    <div class="col-md-6">
+        <pie-chart [data]="categoryOrdersGraphData" title="Order vs Category visualization" height="520" width="520">
             Graphing....
         </pie-chart>
     </div>

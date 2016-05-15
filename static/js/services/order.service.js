@@ -20,7 +20,10 @@ export let OrderService = class {
         }).map(response => response.json());
     }
     fetchAggregatedOrdersByUser() {
-        return this.http.get(AppConfig.API_ENDPOINT + 'orders/count').map(response => response.json());
+        return this.http.get(AppConfig.API_ENDPOINT + 'orders/users/count').map(response => response.json());
+    }
+    fetchAggregatedOrdersByCategory() {
+        return this.http.get(AppConfig.API_ENDPOINT + 'orders/categories/count').map(response => response.json());
     }
 };
 OrderService = __decorate([

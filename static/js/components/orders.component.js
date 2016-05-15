@@ -15,6 +15,8 @@ export let Orders = class {
         this.orderList = [];
         this.orderService.fetchAggregatedOrdersByUser()
             .subscribe(orders => this.userOrdersGraphData = orders, error => console.error('Error: ' + JSON.stringify(error)), () => console.log('Completed!'));
+        this.orderService.fetchAggregatedOrdersByCategory()
+            .subscribe(orders => this.categoryOrdersGraphData = orders, error => console.error('Error: ' + JSON.stringify(error)), () => console.log('Completed!'));
     }
     selectUser(selectedUser) {
         this.selectedUser = selectedUser;
