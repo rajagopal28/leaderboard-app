@@ -5,9 +5,9 @@ As e-commerce has become one of the inevitable part of our day-to-day life, it's
 With problem being stated we propose an interactive e-commerce web application that has an option to make a purchase online. Based on what the customer purchases, the customer will be placed on a level in the leadership board( based on the type of product that has been purchased). (e.g. When a customer purchases vegetable oils[from one brand each month] regularly from the system, he/she will attain a particular level in the leadership board of those who purchase vegetable oils[irrespective of brand](internally he/she will also have a level associated in the subsequent top level category[say food/grocery, which is the parent category of vegetable oils]). This part is done.
      In order to enhance the business value, the above system can act as a data input system to the another which is an analytical engine for customer loyalty program that uses the above system’s output as input and send out promotions based on the level that the user has acquired in the leadership board. These user promotions are applied on all leadership boards that the user is part of(such as the user will receive a promotion specific to vegetable oils as well as he/she will receive promotions on the food/grocery category on any products related to vegetable-oil[say wheat flour or rice]). This part is not done.
 ## Architecture:
-![Architecture](./static/images/image1.png "Architecture")
+![Architecture](./static/images/image01.png "Architecture")
 ## Database Schema:
-![schema](./static/images/image2.png "Database")
+![schema](./static/images/image02.png "Database")
 ## Technical stack:
 This is primarily focused on me getting to know angular 2(angular 2 + type script + emac script 6), which was the talk of the town when I started this project.
 ## Server side:
